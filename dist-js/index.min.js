@@ -12,7 +12,7 @@
  * @since 2.0.0
  */
 async function getVersion() {
-    return window.__TAURI_INVOKE__("plugin:app|version");
+	return window.__TAURI_INVOKE__("plugin:app|version");
 }
 /**
  * Gets the application name.
@@ -25,7 +25,7 @@ async function getVersion() {
  * @since 2.0.0
  */
 async function getName() {
-    return window.__TAURI_INVOKE__("plugin:app|name");
+	return window.__TAURI_INVOKE__("plugin:app|name");
 }
 /**
  * Gets the Tauri version.
@@ -39,7 +39,7 @@ async function getName() {
  * @since 2.0.0
  */
 async function getTauriVersion() {
-    return window.__TAURI_INVOKE__("plugin:app|tauri_version");
+	return window.__TAURI_INVOKE__("plugin:app|tauri_version");
 }
 /**
  * Shows the application on macOS. This function does not automatically focus any specific app window.
@@ -53,7 +53,7 @@ async function getTauriVersion() {
  * @since 2.0.0
  */
 async function show() {
-    return window.__TAURI_INVOKE__("plugin:app|show");
+	return window.__TAURI_INVOKE__("plugin:app|show");
 }
 /**
  * Hides the application on macOS.
@@ -67,7 +67,7 @@ async function show() {
  * @since 2.0.0
  */
 async function hide() {
-    return window.__TAURI_INVOKE__("plugin:app|hide");
+	return window.__TAURI_INVOKE__("plugin:app|hide");
 }
 
 export { getName, getTauriVersion, getVersion, hide, show };
