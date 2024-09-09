@@ -9,9 +9,9 @@
  */
 
 declare global {
-	interface Window {
-		__TAURI_INVOKE__: <T>(cmd: string, args?: unknown) => Promise<T>;
-	}
+  interface Window {
+    __TAURI_INVOKE__: <T>(cmd: string, args?: unknown) => Promise<T>;
+  }
 }
 
 /**
@@ -25,7 +25,7 @@ declare global {
  * @since 2.0.0
  */
 async function getVersion(): Promise<string> {
-	return window.__TAURI_INVOKE__("plugin:app|version");
+  return window.__TAURI_INVOKE__("plugin:app|version");
 }
 
 /**
@@ -39,7 +39,7 @@ async function getVersion(): Promise<string> {
  * @since 2.0.0
  */
 async function getName(): Promise<string> {
-	return window.__TAURI_INVOKE__("plugin:app|name");
+  return window.__TAURI_INVOKE__("plugin:app|name");
 }
 
 /**
@@ -54,7 +54,7 @@ async function getName(): Promise<string> {
  * @since 2.0.0
  */
 async function getTauriVersion(): Promise<string> {
-	return window.__TAURI_INVOKE__("plugin:app|tauri_version");
+  return window.__TAURI_INVOKE__("plugin:app|tauri_version");
 }
 
 /**
@@ -69,7 +69,7 @@ async function getTauriVersion(): Promise<string> {
  * @since 2.0.0
  */
 async function show(): Promise<void> {
-	return window.__TAURI_INVOKE__("plugin:app|show");
+  return window.__TAURI_INVOKE__("plugin:app|show");
 }
 
 /**
@@ -84,7 +84,7 @@ async function show(): Promise<void> {
  * @since 2.0.0
  */
 async function hide(): Promise<void> {
-	return window.__TAURI_INVOKE__("plugin:app|hide");
+  return window.__TAURI_INVOKE__("plugin:app|hide");
 }
 
 export { getName, getVersion, getTauriVersion, show, hide };
