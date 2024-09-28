@@ -1,5 +1,18 @@
 {
+<<<<<<< HEAD
 	"name": "@tauri-apps/plugin-app",
+=======
+	"authors": [
+		"Tauri Programme within The Commons Conservancy"
+	],
+	"browser": "dist-js/index.min.js",
+	"dependencies": {
+		"@tauri-apps/api": "2.0.0-rc.5"
+	},
+	"devDependencies": {
+		"tslib": "2.7.0"
+	},
+>>>>>>> 83ab208557da3373b90ee634b4795d7650b7b413
 	"exports": {
 		"browser": "./dist-js/index.min.js",
 		"import": "./dist-js/index.mjs",
