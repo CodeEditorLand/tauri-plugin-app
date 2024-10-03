@@ -7,7 +7,7 @@ authors = { workspace = true }
 license = { workspace = true }
 
 [package.metadata.docs.rs]
-features = [ "tauri/dox" ]
+features = ["tauri/dox"]
 
 [dependencies]
 tauri = { workspace = true }
