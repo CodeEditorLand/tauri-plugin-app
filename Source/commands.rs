@@ -5,14 +5,10 @@
 use tauri::{AppHandle, Runtime};
 
 #[tauri::command]
-pub fn version<R:Runtime>(app:AppHandle<R>) -> String {
-	app.package_info().version.to_string()
-}
+pub fn version<R:Runtime>(app:AppHandle<R>) -> String { app.package_info().version.to_string() }
 
 #[tauri::command]
-pub fn name<R:Runtime>(app:AppHandle<R>) -> String {
-	app.package_info().name.clone()
-}
+pub fn name<R:Runtime>(app:AppHandle<R>) -> String { app.package_info().name.clone() }
 
 #[tauri::command]
 pub fn tauri_version() -> &'static str { tauri::VERSION }
