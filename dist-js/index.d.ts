@@ -66,4 +66,5 @@ declare function show(): Promise<void>;
  * @since 2.0.0
  */
 declare function hide(): Promise<void>;
+
 export { getName, getVersion, getTauriVersion, show, hide };
