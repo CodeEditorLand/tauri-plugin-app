@@ -18,6 +18,7 @@ pub fn tauri_version() -> &'static str { tauri::VERSION }
 pub fn show<R:Runtime>(app:AppHandle<R>) -> tauri::Result<()> {
 	#[cfg(target_os = "macos")]
 	app.show()?;
+
 	Ok(())
 }
 
@@ -26,5 +27,6 @@ pub fn show<R:Runtime>(app:AppHandle<R>) -> tauri::Result<()> {
 pub fn hide<R:Runtime>(app:AppHandle<R>) -> tauri::Result<()> {
 	#[cfg(target_os = "macos")]
 	app.hide()?;
+
 	Ok(())
 }
